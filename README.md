@@ -7,7 +7,7 @@ go-mutesting is a framework for performing mutation testing on Go source code. I
 The following command mutates the go-mutesting project with all available mutators.
 
 ```bash
-go-mutesting github.com/zimmski/go-mutesting/...
+go-mutesting github.com/mccurdyc/go-mutesting/...
 ```
 
 The execution of this command prints for every mutation if it was successfully tested or not. If not, the source code patch is printed out, so the mutation can be investigated. The following shows an example for a patch of a mutation.
@@ -67,7 +67,7 @@ Mutation testing is also especially interesting for comparing automatically gene
 go-mutesting includes a binary which is go-getable.
 
 ```bash
-go get -t -v github.com/zimmski/go-mutesting/...
+GO111MODULE=on go get github.com/zimmski/go-mutesting@latest
 ```
 
 The binary's help can be invoked by executing the binary without arguments or with the `--help` argument.
